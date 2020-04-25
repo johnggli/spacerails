@@ -17,7 +17,7 @@ class AliensControllerTest < ActionDispatch::IntegrationTest
 
   test "should create alien" do
     assert_difference('Alien.count') do
-      post aliens_url, params: { alien: { age: @alien.age, name: @alien.name } }
+      post aliens_url, params: { alien: { age: @alien.age, name: @alien.name, planet_id: @alien.planet_id } }
     end
 
     assert_redirected_to alien_url(Alien.last)
@@ -34,7 +34,7 @@ class AliensControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update alien" do
-    patch alien_url(@alien), params: { alien: { age: @alien.age, name: @alien.name } }
+    patch alien_url(@alien), params: { alien: { age: @alien.age, name: @alien.name, planet_id: @alien.planet_id } }
     assert_redirected_to alien_url(@alien)
   end
 

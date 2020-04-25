@@ -16,6 +16,7 @@ class AliensTest < ApplicationSystemTestCase
 
     fill_in "Age", with: @alien.age
     fill_in "Name", with: @alien.name
+    fill_in "Planet", with: @alien.planet_id
     click_on "Create Alien"
 
     assert_text "Alien was successfully created"
@@ -28,6 +29,7 @@ class AliensTest < ApplicationSystemTestCase
 
     fill_in "Age", with: @alien.age
     fill_in "Name", with: @alien.name
+    fill_in "Planet", with: @alien.planet_id
     click_on "Update Alien"
 
     assert_text "Alien was successfully updated"
