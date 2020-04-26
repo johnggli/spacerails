@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+planets = Planet.create([
+    { name: "Jupiter" }, 
+    { name: "Neptune" },
+    ])
+Alien.create(name: "Bumblebee", age: 3045, planet: planets.last)
