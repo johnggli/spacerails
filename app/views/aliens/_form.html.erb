@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :planet_id %>
-    <%= form.text_field :planet_id %>
+    <%= form.collection_select(:planet_id, Planet.all, :id, :name, prompt: true) %>
   </div>
 
   <div class="actions">
