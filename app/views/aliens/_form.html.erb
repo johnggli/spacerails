@@ -26,6 +26,11 @@
     <%= form.collection_select(:planet_id, Planet.all, :id, :name, prompt: true) %>
   </div>
 
+  <div class="field">
+    <%= form.label :powers %>
+    <%= form.collection_check_boxes(:power_ids, Power.all, :id, :name) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
