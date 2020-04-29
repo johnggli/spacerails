@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
+:root {
+    --bgColor: #2196f3;
+    --titleColor: #37474f;
+}
+
 
 * {
     margin: 0;
@@ -7,8 +12,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+
+
+/*--------------- navbar ---------------*/
+
 .navbar {
-    background-color: #2196f3;
+    background-color: var(--bgColor);
 }
 
 .navbar ul {
@@ -31,4 +41,33 @@
 .navbar li:hover {
     background-color: rgba(0, 0, 0, 0.5);
     transition: .3s;
+}
+
+
+
+
+/*--------------- item ---------------*/
+
+h1 {
+    text-align: center;
+    color: var(--titleColor);
+    font-weight: 700;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+thead tr {
+    background-color: #bdbdbd;
+}
+
+thead tr th {
+    padding: 15px;
+    text-align: center;
+    color: var(--titleColor);
+    font-weight: 800;
 }
