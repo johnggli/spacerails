@@ -10,10 +10,12 @@
   </head>
 
   <body>
-    <div class="menu">
-      <%= link_to "planets", planets_path %>
-      <%= link_to "aliens", aliens_path %>
-      <%= link_to "powers", powers_path %>
+    <div class="navbar">
+      <ul>
+        <li><%= link_to "planets", planets_path %></li>
+        <li><%= link_to "aliens", aliens_path %></li>
+        <li><%= link_to "powers", powers_path %></li>
+      </ul>
     </div>
 
     <%= yield %>
