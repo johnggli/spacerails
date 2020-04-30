@@ -3,7 +3,8 @@
 :root {
     --bgColor1: #eceff1;
     --bgColor2: #2196f3;
-    --titleColor: #37474f;
+    --titleColor: #0d47a1;
+    --fontColor: #546e7a;
 }
 
 
@@ -91,6 +92,8 @@ thead tr th {
 
 tbody tr td {
     padding: 15px;
+    font-weight: 600;
+    color: var(--fontColor);
 }
 
 tbody tr:nth-child(even) {
