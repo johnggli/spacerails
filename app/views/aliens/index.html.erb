@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Age</th>
       <th>Planet</th>
-      <th colspan="3">Options</th>
+      <th class="thOptions">Options</th>
     </tr>
   </thead>
 
@@ -18,9 +18,11 @@
         <td><%= alien.name %></td>
         <td><%= alien.age %></td>
         <td><%= alien.planet.name %></td>
-        <td><%= link_to 'Show', alien %></td>
-        <td><%= link_to 'Edit', edit_alien_path(alien) %></td>
-        <td><%= link_to 'Destroy', alien, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="options">
+          <%= link_to '<i class="material-icons show">remove_red_eye</i>'.html_safe, alien %>
+          <%= link_to '<i class="material-icons edit">edit</i>'.html_safe, edit_alien_path(alien) %>
+          <%= link_to '<i class="material-icons delete">delete</i>'.html_safe, alien, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +30,7 @@
 
 <br>
 
-<%= link_to 'New Alien', new_alien_path %>
+
+<div class="new">
+  <%= link_to '<i class="material-icons">add</i>New Alien'.html_safe, new_alien_path %>
+</div>
