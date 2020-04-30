@@ -15,9 +15,9 @@
       <tr>
         <td><%= power.name %></td>
         <td class="options">
-          <%= link_to '<i class="material-icons show">remove_red_eye</i>'.html_safe, power %>
-          <%= link_to '<i class="material-icons edit">edit</i>'.html_safe, edit_power_path(power) %>
-          <%= link_to '<i class="material-icons delete">delete</i>'.html_safe, power, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to '<i class="material-icons show" title="Show">remove_red_eye</i>'.html_safe, power %>
+          <%= link_to '<i class="material-icons edit" title="Edit">edit</i>'.html_safe, edit_power_path(power) %>
+          <%= link_to '<i class="material-icons delete" title="Delete">delete</i>'.html_safe, power, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
     <% end %>
