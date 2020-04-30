@@ -3,6 +3,7 @@
 :root {
     --bgColor1: #eceff1;
     --bgColor2: #2196f3;
+    --bgColor3: #0d47a1;
     --titleColor: #0d47a1;
     --fontColor: #546e7a;
 }
@@ -45,8 +46,7 @@ body {
 }
 
 .navbar li:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: .3s;
+    background-color: var(--bgColor3);
 }
 
 
@@ -131,10 +131,11 @@ tbody tr td a {
     padding: 15px 30px;
     font-weight: 600;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .new a:hover {
-    transition: 0.3s;
+    background-color: var(--bgColor3);
 }
 
 .new a i {
