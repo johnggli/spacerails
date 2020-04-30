@@ -14,9 +14,9 @@
     <% @planets.each do |planet| %>
       <tr>
         <td><%= planet.name %></td>
-        <td><%= link_to 'Show', planet %></td>
-        <td><%= link_to 'Edit', edit_planet_path(planet) %></td>
-        <td><%= link_to 'Destroy', planet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="material-icons">remove_red_eye</i>'.html_safe, planet %></td>
+        <td><%= link_to '<i class="material-icons">edit</i>'.html_safe, edit_planet_path(planet) %></td>
+        <td><%= link_to '<i class="material-icons">delete</i>'.html_safe, planet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
