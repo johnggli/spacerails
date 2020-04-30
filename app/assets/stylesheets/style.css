@@ -96,3 +96,13 @@ tbody tr td {
 tbody tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+
+
+/*--------------- icons ---------------*/
+
+tbody tr td a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
