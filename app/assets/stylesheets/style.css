@@ -3,8 +3,8 @@
 :root {
     --bgColor1: #eceff1;
     --bgColor2: #2196f3;
-    --bgColor3: #0d47a1;
-    --titleColor: #0d47a1;
+    --bgColor3: #1976d2;
+    --titleColor: #1976d2;
     --fontColor: #546e7a;
 }
 
@@ -146,4 +146,49 @@ tbody tr td a {
     /* vertical-align: middle; */
     position: relative;
     top: 6px;
+}
+
+
+
+
+/*--------------- options ---------------*/
+
+.options a i {
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: white;
+
+    transition: .3s;
+}
+
+.show {
+    background-color: #00bcd4;
+    box-shadow: 0 0px 3px 0px #00bcd4;
+}
+
+.edit {
+    background-color: #ff9800;
+    box-shadow: 0 0px 3px 0px #ff9800;
+}
+
+.delete {
+    background-color: #f44336;
+    box-shadow: 0 0px 3px 0px #f44336;
+}
+
+/* .options a i:hover {
+    filter: brightness(80%);
+} */
+
+.show:hover {
+    background-color: #0097a7;
+}
+
+.edit:hover {
+    background-color: #f57c00;
+}
+
+.delete:hover {
+    background-color: #d32f2f;
 }
