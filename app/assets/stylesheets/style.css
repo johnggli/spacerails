@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 :root {
     --bgColor1: #eceff1;
     --bgColor2: #2196f3;
     --bgColor3: #1976d2;
-    --titleColor: #1976d2;
+    --titleFont: 'Courgette', cursive;
     --fontColor: #546e7a;
 }
 
@@ -58,8 +59,10 @@ body {
 /*--------------- item ---------------*/
 
 h1 {
+    font-family: var(--titleFont);
+    font-size: 50px;
     text-align: center;
-    color: var(--titleColor);
+    color: var(--bgColor2);
     font-weight: 700;
     padding: 50px;
 }
@@ -92,7 +95,6 @@ thead tr {
 thead tr th {
     padding: 15px;
     text-align: center;
-    color: var(--titleColor);
     font-weight: 600;
     text-align: left;
     color: white;
