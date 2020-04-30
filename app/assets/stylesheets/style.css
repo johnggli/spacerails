@@ -138,5 +138,7 @@ tbody tr td a {
 }
 
 .new a i {
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    position: relative;
+    top: 6px;
 }
