@@ -14,9 +14,11 @@
   <body>
     <div class="navbar">
       <ul>
-        <li><%= link_to "planets", planets_path %></li>
-        <li><%= link_to "aliens", aliens_path %></li>
-        <li><%= link_to "powers", powers_path %></li>
+        <%# https://css-tricks.com/fighting-the-space-between-inline-block-elements %>
+
+        <li><%= link_to "planets", planets_path %></li><!--
+        --><li><%= link_to "aliens", aliens_path %></li><!--
+        --><li><%= link_to "powers", powers_path %></li>
       </ul>
     </div>
 
