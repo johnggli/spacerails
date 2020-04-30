@@ -109,3 +109,34 @@ tbody tr td a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
+
+
+
+
+/*--------------- new ---------------*/
+
+.new {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.new a {
+    /* color: inherit; blue colors for links too */
+    color: white;
+    text-decoration: inherit; /* no underline */
+    background-color: var(--bgColor2);
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.new a:hover {
+    transition: 0.3s;
+}
+
+.new a i {
+    vertical-align: middle;
+}
