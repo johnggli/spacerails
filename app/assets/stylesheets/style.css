@@ -64,6 +64,11 @@ h1 {
     padding: 50px;
 }
 
+
+
+
+/*--------------- table ---------------*/
+
 table {
     width: 100%;
     max-width: 750px;
@@ -91,6 +96,10 @@ thead tr th {
     font-weight: 600;
     text-align: left;
     color: white;
+}
+
+.thOptions {
+    width: 30%;
 }
 
 tbody tr td {
